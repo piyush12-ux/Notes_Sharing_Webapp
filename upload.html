@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Notes - College NotesHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+
+<header class="main-header">
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <h1>College <span>NotesHub</span></h1>
+        </div>
+        
+        <nav class="main-nav">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="notes.html"><i class="fas fa-book"></i> Browse Notes</a>
+            <a href="upload.html" class="active"><i class="fas fa-upload"></i> Upload</a>
+            <a href="login.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </nav>
+        
+        <div class="header-actions">
+            <button class="dark-mode-toggle" onclick="toggleDark()" title="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+                <span>Dark Mode</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="container" style="padding: 50px 0;">
+    <h1 style="text-align: center; margin-bottom: 30px; color: var(--dark);">Upload Your Notes</h1>
+    
+    <div style="background: white; padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); max-width: 800px; margin: 0 auto;">
+        <div style="margin-bottom: 30px;">
+            <label style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Note Title</label>
+            <input type="text" placeholder="Enter note title" style="width: 100%; padding: 15px; border: 2px solid #eee; border-radius: var(--radius-sm); font-size: 1rem;">
+        </div>
+        
+        <div style="margin-bottom: 30px;">
+            <label style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Subject</label>
+            <select style="width: 100%; padding: 15px; border: 2px solid #eee; border-radius: var(--radius-sm); font-size: 1rem;">
+                <option>Select Subject</option>
+                <option>Programming</option>
+                <option>Database Management</option>
+                <option>Web Development</option>
+                <option>Mathematics</option>
+                <option>Computer Networks</option>
+                <option>Operating Systems</option>
+            </select>
+        </div>
+        
+        <div style="margin-bottom: 30px;">
+            <label style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Semester</label>
+            <select style="width: 100%; padding: 15px; border: 2px solid #eee; border-radius: var(--radius-sm); font-size: 1rem;">
+                <option>Select Semester</option>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+            </select>
+        </div>
+        
+        <div style="margin-bottom: 30px;">
+            <label style="display: block; margin-bottom: 10px; font-weight: 600; color: var(--dark);">Upload File</label>
+            <div style="border: 2px dashed #6c63ff; padding: 40px; text-align: center; border-radius: var(--radius); cursor: pointer;" onclick="document.getElementById('fileInput').click()">
+                <i class="fas fa-cloud-upload-alt" style="font-size: 3rem; color: #6c63ff; margin-bottom: 15px;"></i>
+                <h3 style="margin-bottom: 10px;">Click to upload or drag & drop</h3>
+                <p style="color: var(--gray);">PDF, DOC, DOCX files (Max 10MB)</p>
+                <input type="file" id="fileInput" style="display: none;">
+            </div>
+        </div>
+        
+        <button class="btn-download" style="width: 100%; padding: 18px; font-size: 1.2rem;" onclick="alert('Note uploaded successfully!')">
+            <i class="fas fa-cloud-upload-alt"></i> Upload Notes
+        </button>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>© 2024 CollegeNotesHub | Made for College Project</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/darkmode.js"></script>
+</body>
+</html>
