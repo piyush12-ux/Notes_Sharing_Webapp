@@ -421,6 +421,7 @@
         </a>
       </div>
     </div>
+    
     <div class="hero-image reveal" style="animation-delay: 0.3s;">
       <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Students studying">
       <div class="image-label">
@@ -429,16 +430,19 @@
     </div>
   </div>
 </section>
+
 <!-- QUICK SEARCH SECTION -->
 <section class="search-section" id="quick-search">
   <div class="container reveal">
     <h2 class="section-title">Find Notes Quickly</h2>
     <p class="section-subtitle">Search by semester, subject, or programming language</p>
+    
     <div class="search-container">
       <div class="search-box">
         <input type="text" id="searchInput" placeholder="Search for notes (e.g., Java Programming, DBMS, Web Tech)...">
         <button onclick="performSearch()" class="pulse-animation"><i class="fas fa-search"></i> Search</button>
       </div>
+      
       <div class="quick-filters">
         <button class="filter-btn active pulse-animation" data-filter="all">All</button>
         <button class="filter-btn pulse-animation" data-filter="sem1">Semester 1</button>
@@ -452,6 +456,7 @@
     </div>
   </div>
 </section>
+
 <!-- FEATURED NOTES -->
 <section class="featured-section">
   <div class="container">
@@ -459,6 +464,7 @@
       <h2 class="section-title">📚 Recently Uploaded Notes</h2>
       <a href="notes.html" class="view-all pulse-animation">View All <i class="fas fa-arrow-right"></i></a>
     </div>
+    
     <div class="notes-grid" id="notesContainer">
       <div class="note-card reveal flip-card" style="animation-delay: 0.1s;">
         <div class="flip-card-inner">
@@ -485,6 +491,7 @@
           </div>
         </div>
       </div>
+      
       <div class="note-card reveal" style="animation-delay: 0.2s;">
         <div class="note-badge">Semester 4</div>
         <div class="note-icon">
@@ -501,6 +508,7 @@
           <button class="btn-preview pulse-animation" onclick="previewNote()"><i class="far fa-eye"></i> Preview</button>
         </div>
       </div>
+      
       <div class="note-card reveal" style="animation-delay: 0.3s;">
         <div class="note-badge">Semester 2</div>
         <div class="note-icon">
@@ -1101,16 +1109,5 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 </script>
-
-<!-- Chatbot -->
- <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-	createChat({
-		webhookUrl: 'https://piyushyadav9.app.n8n.cloud/webhook/a7f5fa5f-894c-4bc0-aa51-c8d6ff5dbbbb/chat'
-	});
-</script>
-
 </body>
 </html>
